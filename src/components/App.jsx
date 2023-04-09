@@ -48,8 +48,7 @@ export class App extends Component {
 
   render () {
     return (
-      <>
-      
+    <>
       <SearchBar onSubmit = {this.handleSubmit} />
         <ImageGallery
           images={this.state.images}
@@ -62,8 +61,7 @@ export class App extends Component {
         </button>}
         {this.state.largeImageURL && <Modal
           largeImageURL={this.state.largeImageURL}
-            onClose={this.openModal} />}
- 
+          onClose={this.openModal} />}
     </>
   );
   }
